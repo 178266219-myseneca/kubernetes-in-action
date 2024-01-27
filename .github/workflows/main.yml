@@ -19,7 +19,7 @@ jobs:
       env:
         AWS_ACCESS_KEY_ID:ASIAXDER47224ZHE6LXB
         AWS_SECRET_ACCESS_KEY:JLvpQFoXzxoNj5013qKhejy8UxQe0U1mBbcD8Uo9
-        AWS_SESSION_TOKEN:FwoGZXIvYXdzEAoaDFzey2MWnVMNuilIZCLJARQ7Ks/ilmlZOS5SOA6zVwnkgQwtaP/TrMN7Yow0eiN3zUPEPAWcbaDtunWipPTaNYbSxkq6iG2wim07EitEkHvRRZl1hsI4UijenThV4Is4
+        AWS_SESSION_TOKENFwoGZXIvYXdzEAoaDFzey2MWnVMNuilIZCLJARQ7Ks/ilmlZOS5SOA6zVwnkgQwtaP/TrMN7Yow0eiN3zUPEPAWcbaDtunWipPTaNYbSxkq6iG2wim07EitEkHvRRZl1hsI4UijenThV4Is4+spWa//MdXQH37cEzri1RPQogKqPpQ0LrvBbutO6es9+Qrp+UBw8FvtsqqAmnuE35mMB4xzu/PIajRKkJW21ToqVjeU8A90KKf7LY1+
         AWS_REGION: us-east-1
 
     - name: Build, test, tag, and push image to Amazon ECR
