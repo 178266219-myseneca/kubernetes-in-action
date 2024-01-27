@@ -29,6 +29,7 @@ jobs:
         IMAGE_TAG: v0.1
       run: |
         cd Chapter02/kubia/
+        sed -i 's/Hello Kubernetes/rohan pamnani - 178266219/' main.go
         ls -ltra
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
