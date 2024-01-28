@@ -21,15 +21,15 @@ jobs:
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
       env:
-        AWS_ACCESS_KEY_ID: ASIAXDER47224ZHE6LXB
-        AWS_SECRET_ACCESS_KEY: JLvpQFoXzxoNj5013qKhejy8UxQe0U1mBbcD8Uo9
-        AWS_SESSION_TOKEN: FwoGZXIvYXdzEAoaDFzey2MWnVMNuilIZCLJARQ7Ks/ilmlZOS5SOA6zVwnkgQwtaP/TrMN7Yow0eiN3zUPEPAWcbaDtunWipPTaNYbSxkq6iG2wim07EitEkHvRRZl1hsI4UijenThV4Is4+spWa//MdXQH37cEzri1RPQogKqPpQ0LrvBbutO6es9+Qrp+UBw8FvtsqqAmnuE35mMB4xzu/PIajRKkJW21ToqVjeU8A90KKf7LY1+2BXi4VPpqozkTBoYJNRaAXt+eFfOSNbKa9ZM0OjQ3TToRbkut8mrR7Af6JCiQntGtBjItOqnipve0gw56CTLHcledUbI0QZGvZulbjeXmUWk5Kyc6N+1nxpf3powsmF3+ 
+        AWS_ACCESS_KEY_ID: ASIAXDER4722VOWJ7YPL
+        AWS_SECRET_ACCESS_KEY: Qa3HMPrwtOgIPqTMxsgA+WyByElPejseKimC5lGC
+        AWS_SESSION_TOKEN: FwoGZXIvYXdzECMaDDPjVJ5DTGT6P3L6eCLJAWLpdMRDZlqCAHCN+Unp+LWZe1zgKq8maHiMAwLeUrahmn7eJxjNp/SwpYCyBqOI8FRAfaLgutNLH5b2fzzDLSgwCcDXG+lX9BA8hRJhk0e0rkJkoradOSiViatiTGNQXPewAQQDE3Xmp4MRF+W4grIVVXMS9Ue67NMnkHK6rp6p//ZejsBhSqlRJ9sS0njZXTCRsFEVuD/GM9Z/IKyZtYYQ/VCth10e4pjTBpSy2gLYScF1XCTRarrXwo0SLfCrx5xQZmi/Vg0xNiis1datBjItHiDJE2kXpIMIQvWGseKgZznUayX98DXxLk7s2g0Pdfz/FyHuDpzVomQEjB1H
         AWS_REGION: us-east-1
 
     - name: Build, test, tag, and push image to Amazon ECR
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: clo835-week4
+        ECR_REPOSITORY: clo835-week3
         IMAGE_TAG: v0.1
       run: |
         cd Chapter02/kubia/
